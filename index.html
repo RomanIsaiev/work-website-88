@@ -3,18 +3,344 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>App</title>
+    <title>Секреты судьбы</title>
     <link
       rel="stylesheet"
       href="node_modules/modern-normalize/modern-normalize.css"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Infant:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./src/css/styles.css" />
   </head>
   <body>
-    <header class="header"><div class="container"></div></header>
     <main>
-      <section></section>
+      <section class="hero">
+        <div class="container">
+          <div class="main-title-container">
+            <h1 class="title"><span>С</span>екреты судьбы</h1>
+          </div>
+          <p class="uniq">
+            Уникальные астрологические эфиры с индивидуальными разборами
+          </p>
+          <p class="desc">
+            Раскройте тайны и сильные стороны своей карты рождения, чтобы
+            достичь успехов в любой желаемой сфере
+          </p>
+          <a class="btn" href="">Зарегистрироваться бесплатно</a>
+        </div>
+        <picture
+          ><source
+            srcset="
+              ./src/img/hero/author-1x.png 1x,
+              ./src/img/hero/author-2x.png 2x
+            "
+            width="436"
+            height="482" />
+          <img
+            class="hero-author"
+            src="./src/img/hero/author-1x.png"
+            alt="author"
+            width="436"
+            height="482"
+        /></picture>
+      </section>
+      <section class="bonus">
+        <div class="container">
+          <div class="title-container">
+            <div class="text-wrapper">
+              <p class="text">Успейте зарегистрироваться бесплатно и забрать</p>
+              <h2 class="title">бонус</h2>
+            </div>
+            <img
+              class="bonus-arrow"
+              src="./src/img/bonus/arrow.svg"
+              alt="arrow"
+            />
+          </div>
+          <picture
+            ><source
+              srcset="
+                ./src/img/bonus/bonus-1x.png 1x,
+                ./src/img/bonus/bonus-2x.png 2x
+              "
+              width="320"
+              height="218" />
+            <img
+              class="bonus-image"
+              src="./src/img/bonus/bonus-1x.png"
+              alt="bonus"
+              width="320"
+              height="218"
+          /></picture>
+          <div id="countdown-one" class="countdown">
+            <div class="countdown-number">
+              <span class="minutes countdown-time"></span>
+            </div>
+            <div><span class="countdown-doubledot">:</span></div>
+            <div class="countdown-number">
+              <span class="seconds countdown-time"></span>
+            </div>
+            <div><span class="countdown-doubledot">:</span></div>
+            <div class="countdown-number">
+              <span class="milliseconds countdown-time"></span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="inside-work">
+        <div class="container">
+          <h2 class="inside-title"><span>Ч</span>то внутри?</h2>
+          <p class="text">
+            «Секреты судьбы» — это серия онлайн-эфиров в Zoom, где вы узнаете
+            астрологические секреты, помогающие раскрыть свой потенциал,
+            улучшить отношения, карьеру, здоровье и многое другое
+          </p>
+          <div class="wrapper">
+            <img
+              class="work-arrow arrow-1"
+              src="./src/img/inside-work/list-arrow.svg"
+              alt="arrow"
+            />
+            <img
+              class="work-arrow arrow-2 left"
+              src="./src/img/inside-work/list-arrow.svg"
+              alt="arrow"
+            />
+            <img
+              class="work-arrow arrow-3"
+              src="./src/img/inside-work/list-arrow.svg"
+              alt="arrow"
+            />
+            <img
+              class="work-arrow arrow-4 left"
+              src="./src/img/inside-work/list-arrow.svg"
+              alt="arrow"
+            />
+            <h2 class="inside-title"><span>К</span>ак это работает?</h2>
+            <ul class="list">
+              <li class="list-item">
+                Каждый эфир посвящён новой актуальной теме
+              </li>
+              <li class="list-item">
+                Участие бесплатное для всех, кто хочет слушать и учиться
+              </li>
+              <li class="list-item">
+                Разбор натальных карт участников возможен за символическую плату
+                ($30)
+              </li>
+              <li class="list-item">
+                Участники с разбором карт получают запись эфира, остальные —
+                только онлайн-доступ
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="advantages">
+        <div class="container">
+          <h2 class="title">преимущества</h2>
+          <p class="subtitle">участия</p>
+          <ul class="list">
+            <li class="list-item">Узнавайте секреты своей натальной карты</li>
+            <li class="list-item">
+              Получайте персональные рекомендации (для участников с платным
+              разбором)
+            </li>
+            <li class="list-item">
+              Каждая тема адаптирована под текущие астрологические тенденции
+            </li>
+          </ul>
+          <p class="more">Хотите узнать больше</p>
+          <p class="close">о ближайшем эфире?</p>
+          <a class="btn" href="">Хочу на эфир</a>
+        </div>
+      </section>
+      <section class="bonus">
+        <div class="container">
+          <div class="title-container">
+            <div class="text-wrapper">
+              <p class="text">Успейте зарегистрироваться бесплатно и забрать</p>
+              <h2 class="title">бонус</h2>
+            </div>
+            <img
+              class="bonus-arrow"
+              src="./src/img/bonus/arrow.svg"
+              alt="arrow"
+            />
+          </div>
+          <picture
+            ><source
+              srcset="
+                ./src/img/bonus/bonus-1x.png 1x,
+                ./src/img/bonus/bonus-2x.png 2x
+              "
+              width="320"
+              height="218" />
+            <img
+              class="bonus-image"
+              src="./src/img/bonus/bonus-1x.png"
+              alt="bonus"
+              width="320"
+              height="218"
+          /></picture>
+          <div id="countdown-one" class="countdown">
+            <div class="countdown-number">
+              <span class="minutes countdown-time"></span>
+            </div>
+            <div><span class="countdown-doubledot">:</span></div>
+            <div class="countdown-number">
+              <span class="seconds countdown-time"></span>
+            </div>
+            <div><span class="countdown-doubledot">:</span></div>
+            <div class="countdown-number">
+              <span class="milliseconds countdown-time"></span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="broadcast">
+        <div class="container">
+          <h2 class="title"><span>Б</span>лижайший эфир</h2>
+          <div class="wrapper">
+            <div class="flex-box">
+              <div class="box">
+                <div class="box-title-container">
+                  <img
+                    class="box-title-icon"
+                    src="./src/img/broadcast/theme.svg"
+                    alt="theme"
+                  />
+                  <p class="theme">Тема:</p>
+                </div>
+                <p class="theme-text">Финансовый потенциал в натальной карте</p>
+              </div>
+              <div class="box">
+                <div class="box-title-container">
+                  <img
+                    class="box-title-icon"
+                    src="./src/img/broadcast/time.svg"
+                    alt="time"
+                  />
+                  <p class="theme">Дата и время:</p>
+                </div>
+                <p class="time-text">29 января 2025 года в 19:00 (по Киеву)</p>
+              </div>
+            </div>
+            <a class="btn" href="">Зарегистрироваться</a>
+          </div>
+        </div>
+      </section>
+      <section class="questions">
+        <div class="container">
+          <h2 class="title"><span>О</span>тветы на вопросы</h2>
+
+          <div class="questions-container">
+            <ul class="questions-list list">
+              <li class="questions-item">
+                <div class="questions-title-container">
+                  <p class="questions-item-title">Как принять участие?</p>
+                  <div class="questions-item-svg"></div>
+                </div>
+                <div class="questions-answer-container">
+                  <div class="questions-wrapper">
+                    <p class="questions-answer">
+                      Для участия в эфирах нужно просто зарегистрироваться по
+                      кнопке «Зарегистрироваться бесплатно» на странице. Вас
+                      перекинет в телеграм-канал. Там вы получите ссылку с
+                      подробностями о времени и теме ближайшего эфира
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="questions-item">
+                <div class="questions-title-container">
+                  <p class="questions-item-title">
+                    Нужно ли платить за участие?
+                  </p>
+                  <div class="questions-item-svg"></div>
+                </div>
+                <div class="questions-answer-container">
+                  <div class="questions-wrapper">
+                    <p class="questions-answer">
+                      Участие в эфирах абсолютно бесплатное. Однако, если вы
+                      хотите получить персональный разбор вашей натальной карты,
+                      это возможно за символическую плату — всего 30 долларов
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="questions-item">
+                <div class="questions-title-container">
+                  <p class="questions-item-title">
+                    Что включает платное участие?
+                  </p>
+                  <div class="questions-item-svg"></div>
+                </div>
+                <div class="questions-answer-container">
+                  <div class="questions-wrapper">
+                    <p class="questions-answer">
+                      Участники с платным разбором получают:
+                    </p>
+                    <ul class="list">
+                      <li class="list-item">
+                        Индивидуальный разбор натальной карты
+                      </li>
+                      <li class="list-item">
+                        Персональные рекомендации, которые помогут вам раскрыть
+                        свой потенциал
+                      </li>
+                      <li class="list-item">
+                        Запись эфира, чтобы пересматривать его в любое время
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li class="questions-item">
+                <div class="questions-title-container">
+                  <p class="questions-item-title">
+                    Какие темы будут обсуждаться на эфирах?
+                  </p>
+                  <div class="questions-item-svg"></div>
+                </div>
+                <div class="questions-answer-container">
+                  <div class="questions-wrapper">
+                    <p class="questions-answer">
+                      Каждое занятие посвящено новой актуальной теме, связанной
+                      с астрологией и улучшением жизни. Например, ближайшая тема
+                      — «Финансовый потенциал в натальной карте»
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="questions-item">
+                <div class="questions-title-container">
+                  <p class="questions-item-title">
+                    Могу ли я участвовать, если ничего не знаю об астрологии?
+                  </p>
+                  <div class="questions-item-svg"></div>
+                </div>
+                <div class="questions-answer-container">
+                  <div class="questions-wrapper">
+                    <p class="questions-answer">
+                      Конечно! Эфиры подойдут как новичкам, так и тем, кто уже
+                      имеет базовые знания. Всё будет объясняться простым и
+                      понятным языком
+                    </p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
     </main>
     <footer class="footer"><div class="container"></div></footer>
+    <script type="module" src="./src/js/timer.js"></script>
+    <script type="module" src="./src/js/questions.js"></script>
   </body>
 </html>
