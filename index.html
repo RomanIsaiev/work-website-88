@@ -30,7 +30,7 @@
             Раскройте тайны и сильные стороны своей карты рождения, чтобы
             достичь успехов в любой желаемой сфере
           </p>
-          <a class="btn" href="">Зарегистрироваться бесплатно</a>
+          <a class="btn" href="#buy">Зарегистрироваться бесплатно</a>
         </div>
         <picture
           ><source
@@ -156,7 +156,7 @@
           </ul>
           <p class="more">Хотите узнать больше</p>
           <p class="close">о ближайшем эфире?</p>
-          <a class="btn" href="">Хочу на эфир</a>
+          <a class="btn" href="#buy">Хочу на эфир</a>
         </div>
       </section>
       <section class="bonus">
@@ -202,7 +202,7 @@
           </div>
         </div>
       </section>
-      <section class="broadcast">
+      <section class="broadcast" id="buy">
         <div class="container">
           <h2 class="title"><span>Б</span>лижайший эфир</h2>
           <div class="wrapper">
@@ -230,7 +230,9 @@
                 <p class="time-text">2 февраля 2025 года в 11:30 (по Киеву)</p>
               </div>
             </div>
-            <a class="btn" href="">Зарегистрироваться</a>
+            <button class="btn" type="button" data-modal-open="modal1">
+              Зарегистрироваться
+            </button>
           </div>
         </div>
       </section>
@@ -339,8 +341,29 @@
         </div>
       </section>
     </main>
+    <div class="backdrop is-hidden" data-modal="modal1">
+      <div class="modal">
+        <button type="button" class="close-button" data-modal-close>
+          <img
+            src="./src/img/close-modal-icon.svg"
+            width="30"
+            height="30"
+            alt="close"
+          />
+        </button>
+        <div class="modal-box">
+          <div>
+            <script
+              type="module"
+              src="https://kwiga.com/build/js/kwiga-widget.js?t=1738234158000&uuid=d79d00e6-360e-473c-b285-6a0b4cf103b0&producer=https://kwiga.com/"
+            ></script>
+          </div>
+        </div>
+      </div>
+    </div>
     <footer class="footer"><div class="container"></div></footer>
     <script type="module" src="./src/js/timer.js"></script>
     <script type="module" src="./src/js/questions.js"></script>
+    <script type="module" src="./src/js/js-modal.js"></script>
   </body>
 </html>
