@@ -175,6 +175,8 @@ body {
 }
 
 .bonus .text-wrapper {
+  max-width: 320px;
+  width: 100%;
 }
 
 .bonus .text {
@@ -186,6 +188,7 @@ body {
   line-height: normal;
   letter-spacing: -0.32px;
   text-transform: uppercase;
+  max-width: 260px;
 }
 
 .bonus .title {
@@ -353,11 +356,6 @@ body {
   top: 90px;
 }
 
-.arrow-1 {
-  right: 30px;
-  top: 90px;
-}
-
 .arrow-2.left {
   left: 30px;
   top: 215px;
@@ -366,13 +364,13 @@ body {
 }
 
 .arrow-3 {
+  top: 450px;
   right: 30px;
-  top: 350px;
 }
 
 .arrow-4.left {
   left: 30px;
-  top: 490px;
+  top: 590px;
 
   transform: rotateY(180deg);
 }
